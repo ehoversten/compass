@@ -8,20 +8,22 @@
 
 /* Begin PBXBuildFile section */
 		CBE9EF48220B8C34001E54F9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBE9EF47220B8C34001E54F9 /* AppDelegate.swift */; };
-		CBE9EF4A220B8C34001E54F9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBE9EF49220B8C34001E54F9 /* ViewController.swift */; };
+		CBE9EF4A220B8C34001E54F9 /* CompassViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBE9EF49220B8C34001E54F9 /* CompassViewController.swift */; };
 		CBE9EF4D220B8C34001E54F9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CBE9EF4B220B8C34001E54F9 /* Main.storyboard */; };
 		CBE9EF4F220B8C36001E54F9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CBE9EF4E220B8C36001E54F9 /* Assets.xcassets */; };
 		CBE9EF52220B8C36001E54F9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CBE9EF50220B8C36001E54F9 /* LaunchScreen.storyboard */; };
+		CBE9EF5A220B9071001E54F9 /* DirectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBE9EF59220B9071001E54F9 /* DirectionViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		CBE9EF44220B8C34001E54F9 /* Compass.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Compass.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CBE9EF47220B8C34001E54F9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		CBE9EF49220B8C34001E54F9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		CBE9EF49220B8C34001E54F9 /* CompassViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompassViewController.swift; sourceTree = "<group>"; };
 		CBE9EF4C220B8C34001E54F9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CBE9EF4E220B8C36001E54F9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CBE9EF51220B8C36001E54F9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CBE9EF53220B8C36001E54F9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CBE9EF59220B9071001E54F9 /* DirectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DirectionViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,11 +57,12 @@
 			isa = PBXGroup;
 			children = (
 				CBE9EF47220B8C34001E54F9 /* AppDelegate.swift */,
-				CBE9EF49220B8C34001E54F9 /* ViewController.swift */,
+				CBE9EF49220B8C34001E54F9 /* CompassViewController.swift */,
 				CBE9EF4B220B8C34001E54F9 /* Main.storyboard */,
 				CBE9EF4E220B8C36001E54F9 /* Assets.xcassets */,
 				CBE9EF50220B8C36001E54F9 /* LaunchScreen.storyboard */,
 				CBE9EF53220B8C36001E54F9 /* Info.plist */,
+				CBE9EF59220B9071001E54F9 /* DirectionViewController.swift */,
 			);
 			path = Compass;
 			sourceTree = "<group>";
@@ -135,8 +138,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CBE9EF4A220B8C34001E54F9 /* ViewController.swift in Sources */,
+				CBE9EF4A220B8C34001E54F9 /* CompassViewController.swift in Sources */,
 				CBE9EF48220B8C34001E54F9 /* AppDelegate.swift in Sources */,
+				CBE9EF5A220B9071001E54F9 /* DirectionViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
