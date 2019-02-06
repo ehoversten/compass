@@ -10,17 +10,23 @@
 import UIKit
 
 class CompassViewController: UIViewController {
+    
+    var sending: String?
 
     @IBAction func northButtonPressed(_ sender: UIButton) {
+        sending = "North"
     }
     
     @IBAction func westButtonPressed(_ sender: UIButton) {
+        sending = "West"
     }
     
     @IBAction func eastButtonPressed(_ sender: UIButton) {
+        sending = "East"
     }
     
     @IBAction func southButtonPressed(_ sender: UIButton) {
+        sending = "South"
     }
     
     
@@ -28,7 +34,12 @@ class CompassViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
     }
-
+    
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let destination = segue.destination as! DirectionViewController
+        destination.direction = sending
+    }
 
 }
 
