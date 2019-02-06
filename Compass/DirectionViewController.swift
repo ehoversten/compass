@@ -13,6 +13,7 @@ class DirectionViewController: UIViewController {
     @IBOutlet weak var directionLabel: UILabel!
     
     @IBAction func dismissButtonPressed(_ sender: UIButton) {
+        dismiss(animated: true, completion: nil)
     }
     
     override func viewDidLoad() {
