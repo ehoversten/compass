@@ -12,6 +12,10 @@ import UIKit
 class CompassViewController: UIViewController {
     
     var sending: String?
+    
+    @IBAction func myUnwindAction(unwindSegue: UIStoryboardSegue) {
+        
+    }
 
     @IBAction func northButtonPressed(_ sender: UIButton) {
         sending = "North"
