@@ -31,7 +31,6 @@
                                 </state>
                                 <connections>
                                     <action selector="westButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ev9-yL-gOR"/>
-                                    <segue destination="04b-K7-LDH" kind="presentation" identifier="westSegue" id="Cdi-I4-GTh"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NM8-vZ-APD">
@@ -47,7 +46,6 @@
                                 </state>
                                 <connections>
                                     <action selector="eastButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="OJn-xA-k2q"/>
-                                    <segue destination="04b-K7-LDH" kind="presentation" identifier="eastSegue" id="Yl5-7h-ggu"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U5h-1k-OPk">
@@ -63,7 +61,6 @@
                                 </state>
                                 <connections>
                                     <action selector="southButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="HaH-9y-8OL"/>
-                                    <segue destination="04b-K7-LDH" kind="presentation" identifier="southSegue" id="sz1-2C-5zh"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4fS-wb-5Zp">
@@ -79,7 +76,6 @@
                                 </state>
                                 <connections>
                                     <action selector="northButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="LUw-77-UCU"/>
-                                    <segue destination="04b-K7-LDH" kind="presentation" identifier="northSegue" id="3cJ-Em-tga"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -97,9 +93,14 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <navigationItem key="navigationItem" id="Ps4-BZ-We9"/>
+                    <connections>
+                        <segue destination="04b-K7-LDH" kind="presentation" identifier="directionSegue" id="SqO-0L-t2s"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="980" y="26.53673163418291"/>
         </scene>
         <!--Direction View Controller-->
         <scene sceneID="XW0-T1-jtS">
@@ -153,10 +154,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ola-0r-f3h" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="QxI-76-Gl5" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="871" y="27"/>
+            <point key="canvasLocation" x="1808.8" y="26.53673163418291"/>
         </scene>
     </scenes>
-    <inferredMetricsTieBreakers>
-        <segue reference="3cJ-Em-tga"/>
-    </inferredMetricsTieBreakers>
 </document>

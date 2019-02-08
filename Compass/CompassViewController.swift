@@ -11,7 +11,7 @@ import UIKit
 
 class CompassViewController: UIViewController {
     
-    var sending: String?
+    var sending: String!
     
     @IBAction func myUnwindAction(unwindSegue: UIStoryboardSegue) {
         
@@ -19,18 +19,22 @@ class CompassViewController: UIViewController {
 
     @IBAction func northButtonPressed(_ sender: UIButton) {
         sending = "North"
+        performSegue(withIdentifier: "directionSegue", sender: self)
     }
     
     @IBAction func westButtonPressed(_ sender: UIButton) {
         sending = "West"
+        performSegue(withIdentifier: "directionSegue", sender: self)
     }
     
     @IBAction func eastButtonPressed(_ sender: UIButton) {
         sending = "East"
+        performSegue(withIdentifier: "directionSegue", sender: self)
     }
     
     @IBAction func southButtonPressed(_ sender: UIButton) {
         sending = "South"
+        performSegue(withIdentifier: "directionSegue", sender: self)
     }
     
     
@@ -40,10 +44,11 @@ class CompassViewController: UIViewController {
     }
     
     
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+    @IBAction override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let destination = segue.destination as! DirectionViewController
         destination.direction = sending
     }
+    
 
 }
 
